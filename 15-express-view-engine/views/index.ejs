@@ -1,0 +1,14 @@
+<h1>Hello world! on port :3000</h1>
+    <h2>Hello, <%= name %></h2>
+
+    <h3>List Students</h3>
+    <% if (students.length < 1) { %>
+     <p>Data empty</p>
+    <% } %>
+    <% students.forEach(student => { %>
+        <ul>
+            <li>Name: <%= student.name %>  </li>
+            <li>Email: <%= student.email %>  </li>
+            
+        </ul>
+    <% }) %>
